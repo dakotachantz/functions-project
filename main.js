@@ -10,7 +10,8 @@ function max(num1, num2) {
     }
 }
 
-console.log("1.", max(10, 5));
+
+max(10, 5);
 
 
 // 2.
@@ -27,7 +28,7 @@ function maxOfThree(num1, num2, num3) {
     }
 }
 
-console.log("2.", maxOfThree(100, 50, 200));
+maxOfThree(100, 50, 200);
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -50,10 +51,11 @@ function isVowel(char) {
     // }
 }
 
-console.log("3.", isVowel("s"));
-console.log("3.", isVowel("a"));
-console.log("3.", isVowel("e"));
-console.log("3.", isVowel("t"));
+isVowel("s");
+isVowel("a");
+isVowel("e");
+isVowel("t");
+
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
@@ -62,7 +64,8 @@ function sum(num1, num2) {
     return num1 + num2;
 }
 
-console.log("4.", sum(100, 50));
+sum(100, 50);
+
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
@@ -72,19 +75,36 @@ function avg(num1, num2, num3) {
     return (num1 + num2 + num3) / 3;
 }
 
-console.log(avg(20, 10, 5));
+avg(30, 20, 10);
+
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
 
+function getLength(string) {
+    return string.length;
+}
 
+getLength("Tacos");
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
+
+function greaterThan(num1, num2) {
+    if (num2 > num1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+greaterThan(10, 100);
+
+greaterThan(50, 10);
 
 
 
@@ -95,6 +115,11 @@ console.log(avg(20, 10, 5));
 // is the parameter that was passed in.
 // Then, write and example of using the function.
 
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+greet("Dakota");
 
 
 // 9.
@@ -105,3 +130,11 @@ console.log(avg(20, 10, 5));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+
+function madlib(word1, word2, word3, word4) {
+    sentence = "There once was a " + word1 + " that " + word2 + " around the " + word3 + " only everyday on its " + word4;
+    return sentence;
+}
+
+
+madlib("taco", "swam", "lion", "skateboard");
